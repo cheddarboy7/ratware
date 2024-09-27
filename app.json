@@ -1,0 +1,74 @@
+{
+  "expo": {
+    "name": "Pinkcaller",
+    "slug": "Pinkcaller",
+    "scheme": "Pinkcaller",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff",
+      "plugins": [
+        "expo-router",
+        "expo-font",
+        "expo-build-properties",
+        {
+          "android": {
+            "minSdkVersion": 24
+          }
+        },
+        "@stream-io/video-react-native-sdk",
+        [
+          "@config-plugins/react-native-webrtc",
+          {
+            "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+            "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone"
+          }
+        ],
+        [
+          "expo-media-library",
+          {
+            "photosPermission": "$(PRODUCT_NAME) would like access to your photo gallery to share image in a message.",
+            "savePhotosPermission": "$(PRODUCT_NAME) would like to save photos to your photo gallery after downloading from a message.",
+            "isAccessMediaLocationEnabled": true
+          }
+        ],
+        [
+          "expo-image-picker",
+          {
+            "cameraPermission": "$(PRODUCT_NAME) would like to use your camera to share image in a message."
+          }
+        ],
+        [
+          "expo-av",
+          {
+            "microphonePermission": "$(PRODUCT_NAME) would like to use your microphone for voice recording."
+          }
+        ]
+      ]
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.Pinkcaller"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.anonymous.Pinkcaller"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2799e43a-3e10-4cea-b9c0-21e2e7735820"
+      }
+    },
+    "owner": "jmwprivett"
+  }
+}
