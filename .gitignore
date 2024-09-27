@@ -4,9 +4,7 @@
 node_modules/
 
 # Expo
-.expo/
-dist/
-web-build/
+
 
 # Native
 *.orig.*
@@ -29,7 +27,7 @@ yarn-error.*
 *.pem
 
 # local env files
-.env*.local
+
 
 # typescript
 *.tsbuildinfo
